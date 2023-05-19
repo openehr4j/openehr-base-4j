@@ -1,0 +1,12 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'openehr-base-java'
+
+include('openehr-base-base-types')
+include('openehr-base-foundation-types')
+include('openehr-base-resource-model')
