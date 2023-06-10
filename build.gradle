@@ -44,4 +44,8 @@ subprojects {
         withSourcesJar()
         withJavadocJar()
     }
+
+    javadoc {
+        failOnError = false
+    }
 }
