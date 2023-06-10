@@ -1,10 +1,4 @@
-<p align="right">
-  <a href="https://masterminds.github.io/stability/experimental.html">
-    <img src="https://masterminds.github.io/stability/experimental.svg">
-  </a>
-</p>
-
-# openehr-base-java
+# openehr-base-java [![Stability: Experimental](https://masterminds.github.io/stability/experimental.svg)](https://masterminds.github.io/stability/experimental.html)
 
 This repository contains the Java interface types for the openEHR [BASE specifications](https://specifications.openehr.org/releases/BASE).
 
