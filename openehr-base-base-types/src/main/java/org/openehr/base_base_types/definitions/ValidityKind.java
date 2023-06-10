@@ -1,4 +1,7 @@
 package org.openehr.base_base_types.definitions;
 
-public enum ValidityKind {
+/**
+ * An enumeration of three values that may commonly occur in constraint models.
+ */
+public interface ValidityKind {
 }

@@ -1,4 +1,7 @@
 package org.openehr.base_foundation_types.interval;
 
-public interface ProperInterval {
+/**
+ * Type representing a 'proper' Interval, i.e. any two-sided or one-sided interval.
+ */
+public interface ProperInterval extends Interval {
 }

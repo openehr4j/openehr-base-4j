@@ -1,4 +1,7 @@
 package org.openehr.base_foundation_types.interval;
 
-public interface PointInterval {
+/**
+ * Type representing an Interval that happens to be a point value. Provides an efficient representation that is substitutable for `Interval<T>` where needed.
+ */
+public interface PointInterval extends Interval {
 }

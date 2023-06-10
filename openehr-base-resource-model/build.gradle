@@ -19,3 +19,8 @@ publishing {
         }
     }
 }
+
+dependencies {
+    api project(':openehr-base-base-types')
+    api project(':openehr-base-foundation-types')
+}

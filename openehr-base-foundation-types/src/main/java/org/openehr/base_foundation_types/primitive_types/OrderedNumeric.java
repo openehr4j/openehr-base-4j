@@ -1,4 +1,7 @@
 package org.openehr.base_foundation_types.primitive_types;
 
-public interface OrderedNumeric {
+/**
+ * Abstract notional parent class of ordered, numeric types, which are types with both the `_less_than_()` and arithmetic functions defined.
+ */
+public interface OrderedNumeric extends Ordered, Numeric {
 }

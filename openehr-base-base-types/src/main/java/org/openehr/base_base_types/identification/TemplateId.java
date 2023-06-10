@@ -1,4 +1,7 @@
 package org.openehr.base_base_types.identification;
 
-public interface TemplateId {
+/**
+ * Identifier for templates. Lexical form to be determined.
+ */
+public interface TemplateId extends ObjectId {
 }

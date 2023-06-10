@@ -1,4 +1,7 @@
 package org.openehr.base_foundation_types.primitive_types;
 
-public interface Octet {
+/**
+ * Type representing minimal interface of built-in Octet type.
+ */
+public interface Octet extends Ordered {
 }
