@@ -18,7 +18,7 @@ How to create such an access token is described here: [docs.github.com](https://
 <dependency>
   <groupId>com.experimental-software.java-api</groupId>
   <artifactId>openehr-base-foundation-types</artifactId>
-  <version>1.2.0-alpha-1</version>
+  <version>1.2.0-alpha-3</version>
 </dependency>
 ```
 
@@ -49,7 +49,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.experimental-software.java-api:openehr-base-foundation-types:1.2.0-alpha-1'
+    api 'com.experimental-software.java-api:openehr-base-foundation-types:1.2.0-alpha-3'
 }
 ```
 
