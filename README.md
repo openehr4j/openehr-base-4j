@@ -2,10 +2,6 @@
 
 This repository contains the Java interface types for the openEHR [BASE specifications](https://specifications.openehr.org/releases/BASE).
 
-## Overview
-
-TBD
-
 ## Usage
 
 The packages are published to GitHub Packages.
