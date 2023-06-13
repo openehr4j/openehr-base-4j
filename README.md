@@ -44,8 +44,12 @@ repositories {
     }
 }
 
+ext['openehrBaseVersion'] = '1.2.0-alpha-4'
+
 dependencies {
-    api 'com.experimental-software.java-api:openehr-base-foundation-types:1.2.0-alpha-3'
+    api "com.experimental-software.java-api:openehr-base-base-types:${openehrBaseVersion}"
+    api "com.experimental-software.java-api:openehr-base-foundation-types:${openehrBaseVersion}"
+    api "com.experimental-software.java-api:openehr-base-resource-model:${openehrBaseVersion}"
 }
 ```
 
