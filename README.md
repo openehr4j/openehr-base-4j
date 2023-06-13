@@ -5,7 +5,7 @@ This repository contains the Java interface types for the openEHR [BASE specific
 ## Usage
 
 The packages are published to GitHub Packages.
-So, even though the packages are publicly available, clients that want to apply package need a GitHub access token with the "read:packages" scope.
+So, even though the packages are publicly available, clients that want to apply them need a GitHub access token with the "read:packages" scope.
 How to create such an access token is described here: [docs.github.com](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
 ### Maven
