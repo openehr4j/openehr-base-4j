@@ -2,6 +2,7 @@
 
 This repository contains the source code for Maven packages with Java interface declarations for the classes defined by the respective specification of the openEHR BASE component.
 
+<<<<<<< HEAD
 ## Dependencies
 
 - [JRE](https://en.wikipedia.org/wiki/Java_(software_platform)#Java_Runtime_Environment) 8+
@@ -10,6 +11,12 @@ This repository contains the source code for Maven packages with Java interface 
 
 The "openehr-base-j3x" packages are published to [GitHub Packages](https://github.com/features/packages).
 So, even though they are publicly available, projects that want to apply those packages need a GitHub access token with the "read:packages" scope.
+=======
+## Usage
+
+The packages are published to GitHub Packages.
+So, even though the packages are publicly available, clients that want to apply them need a GitHub access token with the "read:packages" scope.
+>>>>>>> 4614ca47fbdcb250abaab8e1d6304e37afb59984
 How to create such an access token is described here: [docs.github.com](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
 ### Maven
@@ -119,10 +126,12 @@ repositories {
     }
 }
 
-ext['openehrBaseVersion'] = 'TBD'
+ext['openehrBaseVersion'] = '1.2.0-alpha-4'
 
 dependencies {
-    TBD
+    api "com.experimental-software.java-api:openehr-base-base-types:${openehrBaseVersion}"
+    api "com.experimental-software.java-api:openehr-base-foundation-types:${openehrBaseVersion}"
+    api "com.experimental-software.java-api:openehr-base-resource-model:${openehrBaseVersion}"
 }
 ```
 
