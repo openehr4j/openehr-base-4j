@@ -77,7 +77,17 @@ Then the dependencies to the "openehr-base-j3x" packages can be declared inside 
     <dependencies>
         <dependency>
             <groupId>com.experimental-software.base</groupId>
+            <artifactId>base-types-api</artifactId>
+            <version>${openehr.base.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.experimental-software.base</groupId>
             <artifactId>foundation-types-api</artifactId>
+            <version>${openehr.base.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.experimental-software.base</groupId>
+            <artifactId>resource-model-api</artifactId>
             <version>${openehr.base.version}</version>
         </dependency>
     </dependencies>
@@ -126,9 +136,9 @@ repositories {
 ext['openehrBaseVersion'] = '1.2.0-alpha-6'
 
 dependencies {
-    api "com.experimental-software.base:base-types-api:${openehrBaseVersion}"
-    api "com.experimental-software.base:foundation-types-api:${openehrBaseVersion}"
-    api "com.experimental-software.base:resource-model-api:${openehrBaseVersion}"
+    implementation "com.experimental-software.base:base-types-api:${openehrBaseVersion}"
+    implementation "com.experimental-software.base:foundation-types-api:${openehrBaseVersion}"
+    implementation "com.experimental-software.base:resource-model-api:${openehrBaseVersion}"
 }
 ```
 
