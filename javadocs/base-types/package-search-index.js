@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.openehr.base_base_types.builtins"},{"l":"org.openehr.base_base_types.definitions"},{"l":"org.openehr.base_base_types.identification"}];updateSearchResults();
