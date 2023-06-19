@@ -14,7 +14,7 @@ How to create such an access token is described here: [docs.github.com](https://
 
 ### Maven
 
-For projects that use Maven as build management tool, the personal GitHub access token and "openehr-rm-java" GitHub package repository should be added to the global Maven settings.
+For projects that use Maven as build management tool, the personal GitHub access token and "openehr-base-j3x" GitHub package repository should be added to the global Maven settings.
 
 <details>
   <summary><code>~/.m2/settings.xml</code></summary>
@@ -58,7 +58,7 @@ For projects that use Maven as build management tool, the personal GitHub access
 
 </details> 
 
-Then the dependencies to the "openehr-rm-java" packages can be declared inside the Project Object Model.
+Then the dependencies to the "openehr-base-j3x" packages can be declared inside the Project Object Model.
 
 <details>
   <summary><code>/path/to/project/pom.xml</code></summary>
@@ -71,11 +71,15 @@ Then the dependencies to the "openehr-rm-java" packages can be declared inside t
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <properties>
-        <openehr.base.version>TBD</openehr.rm.version>
+        <openehr.base.version>TBD</openehr.base.version>
     </properties>
 
     <dependencies>
-        TBD
+        <dependency>
+            <groupId>com.experimental-software.base</groupId>
+            <artifactId>foundation-types-api</artifactId>
+            <version>${openehr.base.version}</version>
+        </dependency>
     </dependencies>
 
 </project>
@@ -122,9 +126,9 @@ repositories {
 ext['openehrBaseVersion'] = '1.2.0-alpha-4'
 
 dependencies {
-    api "com.experimental-software.java-api:openehr-base-base-types:${openehrBaseVersion}"
-    api "com.experimental-software.java-api:openehr-base-foundation-types:${openehrBaseVersion}"
-    api "com.experimental-software.java-api:openehr-base-resource-model:${openehrBaseVersion}"
+    api "com.experimental-software.base:base-types-api:${openehrBaseVersion}"
+    api "com.experimental-software.base:foundation-types-api:${openehrBaseVersion}"
+    api "com.experimental-software.base:resource-model-api:${openehrBaseVersion}"
 }
 ```
 

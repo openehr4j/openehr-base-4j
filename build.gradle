@@ -15,7 +15,7 @@ scmVersion {
 }
 
 allprojects  {
-    group = 'com.experimental-software.java-api'
+    group = 'com.experimental-software.base'
     project.version = scmVersion.version
 }
 
@@ -25,7 +25,7 @@ subprojects {
 
     repositories {
         maven {
-            url = uri('https://maven.pkg.github.com/openehr-java-api/openehr-term-java')
+            url = uri('https://maven.pkg.github.com/openehr-java-api/openehr-term-j3x')
             credentials {
                 username = project.findProperty('gpr.user')
                 password = project.findProperty('gpr.key')

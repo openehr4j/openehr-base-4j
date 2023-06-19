@@ -1,8 +1,8 @@
 publishing {
   publications {
     mavenJava(MavenPublication) {
-      groupId = 'com.experimental-software.java-api'
-      artifactId = 'openehr-base-foundation-types'
+      groupId = 'com.experimental-software.base'
+      artifactId = 'foundation-types-api'
 
       from components.java
     }
@@ -11,7 +11,7 @@ publishing {
   repositories {
     maven {
       name = 'GitHubPackages'
-      url = 'https://maven.pkg.github.com/openehr-java-api/openehr-base-java'
+      url = 'https://maven.pkg.github.com/openehr-java-api/openehr-base-j3x'
       credentials {
         username = System.getenv('GITHUB_ACTOR')
         password = System.getenv('GITHUB_TOKEN')
