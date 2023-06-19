@@ -15,7 +15,7 @@ mkdir $GH_PAGES_DIR/javadocs
 # Copy new javadocs
 find . -name "*javadoc.jar" | while read FILE
 do
-  SPECIFICATION=$(echo "${FILE}" | perl -pe 's/.{2}([a-z-]+).*/$1/')
+  SPECIFICATION=$(echo "${FILE}" | perl -pe 's/.\/specifications\/(.*?)\/.*/$1/')
   unzip "${FILE}" -d "${GH_PAGES_DIR}/javadocs/${SPECIFICATION}"
 done
 
