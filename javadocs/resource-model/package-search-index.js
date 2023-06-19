@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.openehr.base_resource_model.resource"}];updateSearchResults();
