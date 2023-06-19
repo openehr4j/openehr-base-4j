@@ -71,7 +71,7 @@ Then the dependencies to the "openehr-base-j3x" packages can be declared inside 
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <properties>
-        <openehr.base.version>TBD</openehr.base.version>
+        <openehr.base.version>1.2.0-alpha-6</openehr.base.version>
     </properties>
 
     <dependencies>
@@ -123,7 +123,7 @@ repositories {
     }
 }
 
-ext['openehrBaseVersion'] = '1.2.0-alpha-4'
+ext['openehrBaseVersion'] = '1.2.0-alpha-6'
 
 dependencies {
     api "com.experimental-software.base:base-types-api:${openehrBaseVersion}"
