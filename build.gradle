@@ -23,16 +23,6 @@ subprojects {
     apply plugin: 'java-library'
     apply plugin: 'maven-publish'
 
-    repositories {
-        maven {
-            url = uri('https://maven.pkg.github.com/openehr-java-api/openehr-term-j3x')
-            credentials {
-                username = project.findProperty('gpr.user')
-                password = project.findProperty('gpr.key')
-            }
-        }
-    }
-
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 

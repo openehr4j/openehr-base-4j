@@ -5,8 +5,8 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'openehr-base-j3x'
+rootProject.name = 'openehr-base-4j'
 
-include(':specifications:base-types')
-include(':specifications:foundation-types')
-include(':specifications:resource-model')
+include('openehr-base-base-types')
+include('openehr-base-foundation-types')
+include('openehr-base-resource-model')
