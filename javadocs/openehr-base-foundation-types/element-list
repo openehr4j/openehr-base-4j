@@ -1,7 +1,7 @@
-org.openehr.base_foundation_types
-org.openehr.base_foundation_types.functional
-org.openehr.base_foundation_types.interval
-org.openehr.base_foundation_types.primitive_types
-org.openehr.base_foundation_types.structure_types
-org.openehr.base_foundation_types.terminology
-org.openehr.base_foundation_types.time_types
+org.openehr.base.foundation_types
+org.openehr.base.foundation_types.functional
+org.openehr.base.foundation_types.interval
+org.openehr.base.foundation_types.primitive_types
+org.openehr.base.foundation_types.structure_types
+org.openehr.base.foundation_types.terminology
+org.openehr.base.foundation_types.time_types
