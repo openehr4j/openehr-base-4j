@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/openehr-base-base-types"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/openehr-base-foundation-types"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/openehr-base-resource-model"
+    schedule:
+      interval: "daily"
