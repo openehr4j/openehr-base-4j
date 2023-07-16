@@ -2,12 +2,11 @@ package org.openehr.base.foundation_types.interval;
 
 import java.lang.Boolean;
 import java.lang.Object;
-import org.openehr.base.foundation_types.Any;
 
 /**
  * Interval abstraction, featuring upper and lower limits that may be open or closed, included or not included.
  */
-public interface Interval extends Any {
+public interface Interval {
   /**
    * Lower bound.
    */

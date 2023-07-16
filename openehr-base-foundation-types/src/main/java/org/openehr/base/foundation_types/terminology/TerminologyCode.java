@@ -1,13 +1,13 @@
 package org.openehr.base.foundation_types.terminology;
 
 import java.lang.String;
-import org.openehr.base.foundation_types.Any;
+
 import org.openehr.base.foundation_types.primitive_types.Uri;
 
 /**
  * Primitive type representing a standalone reference to a terminology concept, in the form of a terminology identifier, optional version, and a code or code string from the terminology.
  */
-public interface TerminologyCode extends Any {
+public interface TerminologyCode {
   /**
    * The archetype environment namespace identifier used to identify a terminology. Typically a value like `"snomed_ct"` that is mapped elsewhere to the full URI identifying the terminology.
    */

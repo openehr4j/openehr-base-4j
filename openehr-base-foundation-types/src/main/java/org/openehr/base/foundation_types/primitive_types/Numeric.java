@@ -1,12 +1,11 @@
 package org.openehr.base.foundation_types.primitive_types;
 
 import java.lang.Object;
-import org.openehr.base.foundation_types.Any;
 
 /**
  * Abstract parent class of numeric types, which are types which have various arithmetic and comparison operators defined.
  */
-public interface Numeric extends Any {
+public interface Numeric {
   /**
    * Sum with `_other_` (commutative). Actual type of result depends on arithmetic balancing rules.
    */

@@ -1,12 +1,11 @@
 package org.openehr.base.foundation_types.primitive_types;
 
 import java.lang.Object;
-import org.openehr.base.foundation_types.Any;
 
 /**
  * Type representing minimal interface of built-in Boolean type.
  */
-public interface Boolean extends Any {
+public interface Boolean {
   /**
    * Logical conjunction of this with `_other_`.
    */
