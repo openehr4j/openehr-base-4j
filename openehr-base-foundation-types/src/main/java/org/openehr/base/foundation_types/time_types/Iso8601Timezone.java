@@ -2,7 +2,6 @@ package org.openehr.base.foundation_types.time_types;
 
 import java.lang.Boolean;
 import java.lang.String;
-import org.openehr.base.foundation_types.primitive_types.Integer;
 
 /**
  * ISO8601 timezone string, in format:

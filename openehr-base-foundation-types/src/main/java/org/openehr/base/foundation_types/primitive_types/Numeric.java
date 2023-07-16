@@ -9,30 +9,30 @@ public interface Numeric {
   /**
    * Sum with `_other_` (commutative). Actual type of result depends on arithmetic balancing rules.
    */
-  Numeric add(Object other);
+  Object add(Object other);
 
   /**
    * Result of subtracting `_other_`. Actual type of result depends on arithmetic balancing rules.
    */
-  Numeric subtract(Object other);
+  Object subtract(Object other);
 
   /**
    * Product by `_other_`. Actual type of result depends on arithmetic balancing rules.
    */
-  Numeric multiply(Object other);
+  Object multiply(Object other);
 
   /**
    * Divide by`_other_`. Actual type of result depends on arithmetic balancing rules.
    */
-  Numeric divide(Object other);
+  Object divide(Object other);
 
   /**
    * Expontiation of this by `_other_`.
    */
-  Numeric exponent(Object other);
+  Object exponent(Object other);
 
   /**
    * Generate negative of current value.
    */
-  Numeric negative();
+  Object negative();
 }

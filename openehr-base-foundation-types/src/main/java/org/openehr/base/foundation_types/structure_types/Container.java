@@ -4,8 +4,6 @@ import java.lang.Boolean;
 import java.lang.Object;
 import java.util.List;
 
-import org.openehr.base.foundation_types.primitive_types.Integer;
-
 /**
  * Abstract ancestor of container types whose items are addressable in some way.
  */

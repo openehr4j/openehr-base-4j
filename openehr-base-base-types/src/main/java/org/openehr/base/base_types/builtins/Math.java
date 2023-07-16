@@ -1,7 +1,6 @@
 package org.openehr.base.base_types.builtins;
 
 import java.lang.Object;
-import org.openehr.base.foundation_types.primitive_types.Double;
 
 /**
  * Mathematical computation.

@@ -3,7 +3,6 @@ package org.openehr.base.foundation_types.time_types;
 import java.lang.Boolean;
 import java.lang.Object;
 import java.lang.String;
-import org.openehr.base.foundation_types.primitive_types.Integer;
 
 /**
  * Represents an ISO 8601 date, including partial and extended forms. Value may be:
