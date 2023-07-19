@@ -4,7 +4,9 @@ import java.lang.Boolean;
 import java.lang.String;
 
 /**
- * Abstract model of UID-based identifiers consisting of a root part and an optional extension; lexical form: `root '::' extension`.
+ * <div class="content"><div class="paragraph">
+ * <p>Abstract model of UID-based identifiers consisting of a root part and an optional extension; lexical form: <code>root '::' extension</code>.</p>
+ * </div></div>
  */
 public interface UidBasedId extends ObjectId {
   /**
