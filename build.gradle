@@ -30,6 +30,14 @@ subprojects {
         from sourceSets.main.allJava
     }
 
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compileOnly 'org.jetbrains:annotations:24.0.1'
+    }
+
     java {
         withSourcesJar()
         withJavadocJar()

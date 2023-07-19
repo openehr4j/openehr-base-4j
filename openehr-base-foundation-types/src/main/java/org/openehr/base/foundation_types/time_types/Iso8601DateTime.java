@@ -4,6 +4,7 @@ import java.lang.Boolean;
 import java.lang.Object;
 import java.lang.String;
 
+import org.jetbrains.annotations.Nullable;
 import org.openehr.base.foundation_types.primitive_types.Real;
 
 /**
@@ -48,6 +49,7 @@ public interface Iso8601DateTime extends Iso8601Type {
   /**
    * Timezone; may be Void.
    */
+  @Nullable
   Iso8601Timezone timezone();
 
   /**
