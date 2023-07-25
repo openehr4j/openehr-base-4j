@@ -7,7 +7,38 @@ import java.lang.String;
 import jakarta.annotation.Nullable;
 
 /**
- * Represents an ISO 8601 date/time, including partial and extended forms. Value may be:
+ * <div class="content"><div class="paragraph">
+ * <p>Represents an ISO 8601 date/time, including partial and extended forms. Value may be:</p>
+ * </div>
+ * <div class="ulist">
+ * <ul>
+ * <li>
+ * <p><code>YYYY-MM-DDThh:mm:ss[(,|.)sss][Z | ±hh[:mm]]</code> (extended, preferred) or</p>
+ * </li>
+ * <li>
+ * <p><code>YYYYMMDDThhmmss[(,|.)sss][Z | ±hh[mm]]</code> (compact)</p>
+ * </li>
+ * <li>
+ * <p>or a partial variant.</p>
+ * </li>
+ * </ul>
+ * </div>
+ * <div class="paragraph">
+ * <p>See <code><em>valid_iso8601_date_time()</em></code> for validity.</p>
+ * </div>
+ * <div class="paragraph">
+ * <p>Note that this class includes 2 deviations from ISO 8601:2004:</p>
+ * </div>
+ * <div class="ulist">
+ * <ul>
+ * <li>
+ * <p>for partial date/times, any part of the date/time up to the month may be missing, not just seconds and minutes as in the standard;</p>
+ * </li>
+ * <li>
+ * <p>the time <code>24:00:00</code> is not allowed, since it would mean the date was really on the next day.</p>
+ * </li>
+ * </ul>
+ * </div></div>
  */
 public interface Iso8601DateTime extends Iso8601Type {
   /**
