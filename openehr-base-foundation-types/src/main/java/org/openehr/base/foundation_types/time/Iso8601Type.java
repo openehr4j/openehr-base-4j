@@ -1,4 +1,4 @@
-package org.openehr.base.foundation_types.time_types;
+package org.openehr.base.foundation_types.time;
 
 import java.lang.Boolean;
 import java.lang.String;

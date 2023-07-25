@@ -1,4 +1,4 @@
-package org.openehr.base.foundation_types.time_types;
+package org.openehr.base.foundation_types.time;
 
 import org.openehr.base.foundation_types.primitive_types.Ordered;
 

@@ -1,9 +1,9 @@
 package org.openehr.base.base_types.builtins;
 
-import org.openehr.base.foundation_types.time_types.Iso8601Date;
-import org.openehr.base.foundation_types.time_types.Iso8601DateTime;
-import org.openehr.base.foundation_types.time_types.Iso8601Time;
-import org.openehr.base.foundation_types.time_types.Iso8601Timezone;
+import org.openehr.base.foundation_types.time.Iso8601Date;
+import org.openehr.base.foundation_types.time.Iso8601DateTime;
+import org.openehr.base.foundation_types.time.Iso8601Time;
+import org.openehr.base.foundation_types.time.Iso8601Timezone;
 
 /**
  * Class representing the real-world environment, providing basic information like current time, date, etc.
