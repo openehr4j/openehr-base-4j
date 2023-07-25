@@ -53,7 +53,7 @@ public interface Iso8601Duration extends Iso8601Type {
   /**
    * Fractional seconds in the `_value_`, i.e. the decimal part of the number preceding the `'S'` in the `'HMS'` part, if one exists.
    */
-  Real fractionalSeconds();
+  Double fractionalSeconds();
 
   /**
    * Number of weeks in the `_value_`, i.e. the value preceding the `W`, if one exists.

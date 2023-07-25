@@ -60,7 +60,7 @@ public interface Iso8601Time extends Iso8601Type {
   /**
    * Extract the fractional seconds part of the time (i.e. following to any decimal sign) as a Real, or return 0.0 if not present.
    */
-  Real fractionalSecond();
+  Double fractionalSecond();
 
   /**
    * Timezone; may be Void.
