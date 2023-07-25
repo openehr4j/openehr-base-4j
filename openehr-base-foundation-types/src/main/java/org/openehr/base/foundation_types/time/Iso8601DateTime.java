@@ -4,8 +4,7 @@ import java.lang.Boolean;
 import java.lang.Object;
 import java.lang.String;
 
-import org.jetbrains.annotations.Nullable;
-import org.openehr.base.foundation_types.primitive_types.Real;
+import jakarta.annotation.Nullable;
 
 /**
  * Represents an ISO 8601 date/time, including partial and extended forms. Value may be:
