@@ -12,55 +12,55 @@ public interface TimeDefinitions {
   /**
    * True if `y >= 0`.
    */
-  Boolean validYear(Object y);
+  Boolean validYear(Integer y);
 
   /**
    * True if `m >= 1 and m \<= months_in_year`.
    */
-  Boolean validMonth(Object m);
+  Boolean validMonth(Integer m);
 
   /**
    * True if `d >= 1 and d \<= days_in_month (m, y)`.
    */
-  Boolean validDay(Object y, Object m, Object d);
+  Boolean validDay(Integer y, Integer m, Integer d);
 
   /**
    * True if `(h >= 0 and h < Hours_in_day) or (h = Hours_in_day and m = 0 and s = 0)` .
    */
-  Boolean validHour(Object h, Object m, Object s);
+  Boolean validHour(Integer h, Integer m, Integer s);
 
   /**
    * True if `m >= 0 and m < Minutes_in_hour`.
    */
-  Boolean validMinute(Object m);
+  Boolean validMinute(Integer m);
 
   /**
    * True if `s >= 0 and s < Seconds_in_minute` .
    */
-  Boolean validSecond(Object s);
+  Boolean validSecond(Integer s);
 
   /**
    * True if `fs >= 0.0` and `fs < 1.0` .
    */
-  Boolean validFractionalSecond(Object fs);
+  Boolean validFractionalSecond(Double fs);
 
   /**
    * String is a valid ISO 8601 date, i.e. takes the complete form:
    */
-  Boolean validIso8601Date(Object s);
+  Boolean validIso8601Date(String s);
 
   /**
    * String is a valid ISO 8601 date, i.e. takes the form:
    */
-  Boolean validIso8601Time(Object s);
+  Boolean validIso8601Time(String s);
 
   /**
    * String is a valid ISO 8601 date-time, i.e. takes the form:
    */
-  Boolean validIso8601DateTime(Object s);
+  Boolean validIso8601DateTime(String s);
 
   /**
    * String is a valid ISO 8601 duration, i.e. takes the form:
    */
-  Boolean validIso8601Duration(Object s);
+  Boolean validIso8601Duration(String s);
 }
