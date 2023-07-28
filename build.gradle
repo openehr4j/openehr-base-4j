@@ -35,7 +35,7 @@ subprojects {
     }
 
     dependencies {
-        compileOnly 'jakarta.annotation:jakarta.annotation-api:2.1.0'
+        compileOnly 'jakarta.annotation:jakarta.annotation-api:2.1.1'
     }
 
     java {
