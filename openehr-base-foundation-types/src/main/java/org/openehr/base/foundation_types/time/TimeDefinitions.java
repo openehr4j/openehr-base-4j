@@ -9,6 +9,23 @@ import java.lang.Object;
  * @see <a href="https://specifications.openehr.org/releases/BASE/Release-1.2.0/foundation_types.html#_time_definitions_class">specifications.openehr.org</a>
  */
 public interface TimeDefinitions {
+
+  public static final Integer SECONDS_IN_MINUTE = 60;
+  public static final Integer MINUTES_IN_HOUR = 60;
+  public static final Integer HOURS_IN_DAY = 24;
+  public static final Double AVERAGE_DAYS_IN_MONTH = 30.42;
+  public static final Integer MAX_DAYS_IN_MONTH = 31;
+  public static final Integer DAYS_IN_YEAR = 365;
+  public static final Double AVERAGES_DAYS_IN_YEAR = 365.24;
+  public static final Integer DAYS_IN_LEAP_YEAR = 366;
+  public static final Integer MAX_DAYS_IN_YEAR = DAYS_IN_LEAP_YEAR;
+  public static final Integer DAYS_IN_WEEK = 7;
+  public static final Integer MONTHS_IN_YEAR = 12;
+  public static final Integer MIN_TIMEZONE_HOUR = 12;
+  public static final Integer MAX_TIMEZONE_HOUR = 14;
+  public static final Double NOMINAL_DAYS_IN_MONTH = 30.42;
+  public static final Double NOMINAL_DAYS_IN_YEAR = 365.24;
+
   /**
    * True if `y >= 0`.
    */
