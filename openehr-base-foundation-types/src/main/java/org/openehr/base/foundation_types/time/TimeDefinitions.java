@@ -5,6 +5,8 @@ import java.lang.Object;
 
 /**
  * Definitions for date/time classes. Note that the timezone limits are set by where the international dateline is. Thus, time in New Zealand is quoted using `+12:00`, not `-12:00`.
+ *
+ * @see <a href="https://specifications.openehr.org/releases/BASE/Release-1.2.0/foundation_types.html#_time_definitions_class">specifications.openehr.org</a>
  */
 public interface TimeDefinitions {
   /**
