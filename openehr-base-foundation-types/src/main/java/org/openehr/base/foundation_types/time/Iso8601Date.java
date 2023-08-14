@@ -5,7 +5,27 @@ import java.lang.Object;
 import java.lang.String;
 
 /**
- * Represents an ISO 8601 date, including partial and extended forms. Value may be:
+ * <div class="content"><div class="paragraph">
+ * <p>Represents an ISO 8601 date, including partial and extended forms. Value may be:</p>
+ * </div>
+ * <div class="ulist">
+ * <ul>
+ * <li>
+ * <p><code>YYYY-MM-DD</code> (extended, preferred)</p>
+ * </li>
+ * <li>
+ * <p><code>YYYYMMDD</code> (compact)</p>
+ * </li>
+ * <li>
+ * <p>a partial invariant.</p>
+ * </li>
+ * </ul>
+ * </div>
+ * <div class="paragraph">
+ * <p>See <code>Time_definitions.<em>valid_iso8601_date()</em></code> for validity.</p>
+ * </div></div>
+ *
+ * @see <a href="https://specifications.openehr.org/releases/BASE/Release-1.2.0/foundation_types.html#_iso8601_date_class">specifications.openehr.org</a>
  */
 public interface Iso8601Date extends Iso8601Type {
   /**
