@@ -76,25 +76,40 @@ public interface Iso8601Date extends Iso8601Type {
   /**
    * Arithmetic addition of a duration to a date.
    */
-  Iso8601Date add(Object aDiff);
+  Iso8601Date add(Iso8601Duration aDiff);
 
   /**
    * Arithmetic subtraction of a duration from a date.
    */
-  Iso8601Date subtract(Object aDiff);
+  Iso8601Date subtract(Iso8601Duration aDiff);
 
   /**
    * Difference of two dates.
    */
-  Iso8601Duration diff(Object aDate);
+  Iso8601Duration diff(Iso8601Date aDate);
 
   /**
-   * Addition of nominal duration represented by `_a_diff_`. For example, a duration of `'P1Y'` means advance to the same date next year, with the exception of the date 29 February in a leap year, to which the addition of a nominal year will result in 28 February of the following year. Similarly, `'P1M'` is understood here as a nominal month, the addition of which will result in one of:
+   * <div class="paragraph">
+   * <p>Addition of nominal duration represented by <code><em>a_diff</em></code>. For example, a duration of <code>'P1Y'</code> means advance to the same date next year, with the exception of the date 29 February in a leap year, to which the addition of a nominal year will result in 28 February of the following year. Similarly, <code>'P1M'</code> is understood here as a nominal month, the addition of which will result in one of:</p>
+   * </div>
+   * <div class="ulist">
+   * <ul>
+   * <li>
+   * <p>the same day in the following month, if it exists, or;</p>
+   * </li>
+   * <li>
+   * <p>one or two days less where the following month is shorter, or;</p>
+   * </li>
+   * <li>
+   * <p>in the case of adding a month to the date 31 Jan, the result will be 28 Feb in a non-leap year (i.e. three less) and 29 Feb in a leap year (i.e. two less).</p>
+   * </li>
+   * </ul>
+   * </div>
    */
-  Iso8601Date addNominal(Object aDiff);
+  Iso8601Date addNominal(Iso8601Duration aDiff);
 
   /**
-   * Subtraction of nominal duration represented by `_a_diff_`. See `_add_nominal_()` for semantics.
+   * <p>Subtraction of nominal duration represented by <code><em>a_diff</em></code>. See <code><em>add_nominal</em>()</code> for semantics.</p>
    */
-  Iso8601Date subtractNominal(Object aDiff);
+  Iso8601Date subtractNominal(Iso8601Duration aDiff);
 }
