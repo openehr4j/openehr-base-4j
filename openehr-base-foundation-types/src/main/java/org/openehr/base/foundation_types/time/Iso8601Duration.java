@@ -7,7 +7,30 @@ import java.lang.String;
 import org.openehr.base.foundation_types.primitive_types.Real;
 
 /**
- * Represents an ISO 8601 duration, which may have multiple parts from years down to seconds. The `_value_` attribute is a String in the format:
+ * <div class="content"><div class="paragraph">
+ * <p>Represents an ISO 8601 duration, which may have multiple parts from years down to seconds. The <code><em>value</em></code> attribute is a String in the format:</p>
+ * </div>
+ * <div class="ulist">
+ * <ul>
+ * <li>
+ * <p><code>P[nnY][nnM][nnW][nnD][T[nnH][nnM][nnS]]</code></p>
+ * </li>
+ * </ul>
+ * </div>
+ * <div class="admonitionblock note">
+ * <table>
+ * <tbody><tr>
+ * <td class="icon">
+ * <div class="title">Note</div>
+ * </td>
+ * <td class="content">
+ * two deviations from ISO 8601 are supported, the first, to allow a negative sign, and the second allowing the 'W' designator to be mixed with other designators.
+ * </td>
+ * </tr>
+ * </tbody></table>
+ * </div></div>
+ *
+ * @see <a href="https://specifications.openehr.org/releases/BASE/Release-1.2.0/foundation_types.html#_iso8601_duration_class">specifications.openehr.org</a>
  */
 public interface Iso8601Duration extends Iso8601Type {
   /**
