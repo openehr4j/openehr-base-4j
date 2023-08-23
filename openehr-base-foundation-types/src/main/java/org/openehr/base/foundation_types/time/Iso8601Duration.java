@@ -91,7 +91,7 @@ public interface Iso8601Duration extends Iso8601Type {
   /**
    * Total number of seconds equivalent (including fractional) of entire duration. Where non-definite elements such as year and month (i.e. 'Y' and 'M') are included, the corresponding 'average' durations from `Time_definitions` are used to compute the result.
    */
-  Real toSeconds();
+  Double toSeconds();
 
   /**
    * Return the duration string value.
